@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+    fontSize: {
+      base: ['18px', '26px'],
+    },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -14,5 +17,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
