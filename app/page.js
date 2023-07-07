@@ -1,102 +1,267 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-base lg:flex">
-        <a className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30"
-        href='https://www.bookshopmap.com/about#product'
-        target='_blank' 
-        rel='noopener noreferrer'>
-        ♥ 후원자가 되어주세요.
-        </a>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://www.bookshopmap.com"
-          >
-            <Image
-              src="/img/logo.svg"
-              alt="Bookshopmap Logo"
-              className="dark:invert"
-              width={50}
-              height={24}
-              priority
-            /><h1 className={`ml-0 text-3xl font-semibold hidden lg:flex`}>동네서점</h1>{' '}제작 중..
-          </a>
+    <main className="bg-base-200">
+      <div className="navbar bg-base-100">
+        <a className="btn-lg btn-ghost normal-case text-xl">daisyUI</a>
+      </div>
+      Hero Search
+      <div className="card w-full bg-base-100 shadow-xl mt-8">
+        <div className="card-body">
+          <div className="join">
+            <div className="w-full">
+              <div>
+                <input
+                  className="input  w-full  md:input-lg input-bordered join-item"
+                  placeholder="Search..."
+                />
+              </div>
+            </div>
+            <select className="select md:select-lg select-bordered join-item">
+              <option disabled selected>
+                Category
+              </option>
+              <option>Sci-fi</option>
+              <option>Drama</option>
+              <option>Action</option>
+            </select>
+            <div className="indicator">
+              <span className="indicator-item badge badge-secondary">new</span>
+              <button className="btn md:btn-lg join-item">Search</button>
+            </div>
+          </div>
         </div>
       </div>
-      <button className="btn btn-lg">어서오세요.</button>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      테이블
+      <div className="card w-full bg-base-100 shadow-xl mt-8">
+        <div className="card-body">
+          <div className="overflow-x-auto">
+            <table className="table">
+              {/* head */}
+              <thead>
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" className="checkbox" />
+                    </label>
+                  </th>
+                  <th>Name</th>
+                  <th className="hidden md:flex">Job</th>
+                  <th className="hidden md:flex">Favorite Color</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                {/* row 1 */}
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" className="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div className="flex items-center space-x-3">
+                      <div className="avatar">
+                        <div className="mask mask-squircle w-12 h-12">
+                          <img
+                            src="/tailwind-css-component-profile-2@56w.png"
+                            alt="Avatar Tailwind CSS Component"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <div className="font-bold">Hart Hagerty</div>
+                        <div className="text-sm opacity-50">United States</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="hidden md:flex">
+                    Zemlak, Daniel and Leannon
+                    <br />
+                    <span className="badge badge-ghost badge-sm">
+                      Desktop Support Technician
+                    </span>
+                  </td>
+                  <td className="hidden md:flex">Purple</td>
+                  <th>
+                    <button className="btn btn-ghost btn-xs">details</button>
+                  </th>
+                </tr>
+                {/* row 2 */}
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" className="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div className="flex items-center space-x-3">
+                      <div className="avatar">
+                        <div className="mask mask-squircle w-12 h-12">
+                          <img
+                            src="/tailwind-css-component-profile-2@56w.png"
+                            alt="Avatar Tailwind CSS Component"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <div className="font-bold">Hart Hagerty</div>
+                        <div className="text-sm opacity-50">United States</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="hidden md:flex">
+                    Zemlak, Daniel and Leannon
+                    <br />
+                    <span className="badge badge-ghost badge-sm">
+                      Desktop Support Technician
+                    </span>
+                  </td>
+                  <td className="hidden md:flex">Purple</td>
+                  <th>
+                    <button className="btn btn-ghost btn-xs">details</button>
+                  </th>
+                </tr>
+                {/* row 3 */}
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" className="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div className="flex items-center space-x-3">
+                      <div className="avatar">
+                        <div className="mask mask-squircle w-12 h-12">
+                          <img
+                            src="/tailwind-css-component-profile-2@56w.png"
+                            alt="Avatar Tailwind CSS Component"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <div className="font-bold">Hart Hagerty</div>
+                        <div className="text-sm opacity-50">United States</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="hidden md:flex">
+                    Zemlak, Daniel and Leannon
+                    <br />
+                    <span className="badge badge-ghost badge-sm">
+                      Desktop Support Technician
+                    </span>
+                  </td>
+                  <td className="hidden md:flex">Purple</td>
+                  <th>
+                    <button className="btn btn-ghost btn-xs">details</button>
+                  </th>
+                </tr>
+                {/* row 4 */}
+                <tr>
+                  <th>
+                    <label>
+                      <input type="checkbox" className="checkbox" />
+                    </label>
+                  </th>
+                  <td>
+                    <div className="flex items-center space-x-3">
+                      <div className="avatar">
+                        <div className="mask mask-squircle w-12 h-12">
+                          <img
+                            src="/tailwind-css-component-profile-2@56w.png"
+                            alt="Avatar Tailwind CSS Component"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <div className="font-bold">Hart Hagerty</div>
+                        <div className="text-sm opacity-50">United States</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td className="hidden md:flex">
+                    Zemlak, Daniel and Leannon
+                    <br />
+                    <span className="badge badge-ghost badge-sm">
+                      Desktop Support Technician
+                    </span>
+                  </td>
+                  <td className="hidden md:flex">Purple</td>
+                  <th>
+                    <button className="btn btn-ghost btn-xs">details</button>
+                  </th>
+                </tr>
+              </tbody>
+              {/* foot */}
+              <tfoot>
+                <tr>
+                  <th></th>
+                  <th>Name</th>
+                  <th className="hidden md:flex">Job</th>
+                  <th className="hidden md:flex">Favorite Color</th>
+                  <th></th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8">Bottom Nav</div>
+      <div className="btm-nav md:hidden">
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            />
+          </svg>
+          <span className="btm-nav-label">홈</span>
+        </button>
+        <button className="active">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
+          </svg>
+          <span className="btm-nav-label">발견하기</span>
+        </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+            />
+          </svg>
+          <span className="btm-nav-label">설정</span>
+        </button>
       </div>
     </main>
-  )
+  );
 }
