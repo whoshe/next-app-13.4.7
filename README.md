@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+![Gihub Actions 상태](https://github.com/whoshe/next-app/actions/workflows/nextjs.yml/badge.svg)
+
 ## Getting Started
 
 First, run the development server:
