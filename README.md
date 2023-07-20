@@ -1,6 +1,6 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![Gihub Actions 상태](https://github.com/whoshe/next-app/actions/workflows/nextjs.yml/badge.svg)
+[![Gihub Actions 상태표시 뱃지](https://github.com/whoshe/next-app/actions/workflows/nextjs.yml/badge.svg)](https://github.com/whoshe/next-app/actions/workflows/nextjs.yml)
 
 ## Getting Started
 
