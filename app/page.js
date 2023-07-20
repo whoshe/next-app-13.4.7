@@ -6,9 +6,7 @@ export default function Home() {
       <div className="navbar bg-base-100">
         <a className="btn-lg btn-ghost normal-case text-xl">daisyUI</a>
       </div>
-      <div>
-        깃허브 출판 테스트 
-      </div>
+      <div>깃허브 푸시 후 자동 빌드 배포 테스트 완료!</div>
     </main>
   );
 }
